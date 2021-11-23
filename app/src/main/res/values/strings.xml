@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PriceTracker</string>
+    <string name="button">Read permission</string>
+    <string name="logo">logo</string>
+    <string name="cart">Cart</string>
+</resources>

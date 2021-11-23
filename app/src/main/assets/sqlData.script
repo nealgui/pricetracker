@@ -1,0 +1,16 @@
+CREATE SCHEMA PUBLIC AUTHORIZATION DBA
+CREATE MEMORY TABLE ITEMS(itemName VARCHAR(40), itemPrice FLOAT, storeName VARCHAR(20), description VARCHAR(150), image VARCHAR(50), itemStock INT)
+CREATE USER SA PASSWORD ""
+GRANT DBA TO SA
+SET WRITE_DELAY 20
+SET SCHEMA PUBLIC
+INSERT INTO ITEMS VALUES('Banana',1.99,'Banana Shop','This is a banana','http://dummyimage.com/180x241.jpg/ff4444/ffffff',10)
+INSERT INTO ITEMS VALUES('Better Banana',11.99,'Banana Shop','This is a better banana','http://dummyimage.com/180x241.jpg/ff4444/ffffff',5)
+INSERT INTO ITEMS VALUES('Burger',5.99,'Burger King','Very tasty burger','http://dummyimage.com/180x241.jpg/ff4444/ffffff',90)
+INSERT INTO ITEMS VALUES('Apple Juice',1.99,'Apple Market','Juice made from real apples','http://dummyimage.com/180x241.jpg/ff4444/ffffff',40)
+INSERT INTO ITEMS VALUES('Concrete Slab',6.95,'Subway','Eat fresh concrete','http://dummyimage.com/180x241.jpg/ff4444/ffffff',10)
+INSERT INTO ITEMS VALUES('Solid Gold Car',8.99,'Gold Car Company','Very expensive car','http://dummyimage.com/180x241.jpg/ff4444/ffffff',3)
+INSERT INTO ITEMS VALUES('Plot of land on the moon',99.99,'NASA','1 square centimeter on the moon','http://dummyimage.com/180x241.jpg/ff4444/ffffff',100)
+INSERT INTO ITEMS VALUES('Worse Banana',111.99,'Banana Shop','This is the worst banana we have. We only have the one.','http://dummyimage.com/180x241.jpg/ff4444/ffffff',1)
+INSERT INTO ITEMS VALUES('Free Banana',0.00,'Banana Boutique','Just take it.','http://dummyimage.com/180x241.jpg/ff4444/ffffff',1)
+INSERT INTO ITEMS VALUES('Raisins',10.99,'Raisin Land','Sold individually','http://dummyimage.com/180x241.jpg/ff4444/ffffff',1000)
